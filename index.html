@@ -11,7 +11,7 @@
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://netsetgo.vercel.app/" />
+  <meta property="og:url" content="https://netsetgopro.vercel.app/" />
   <meta property="og:title" content="Net Set Go | Free Online Internet Speed Test" />
   <meta property="og:description" content="Accurate internet speed test. Check download, upload, ping, IP, and ISP instantly." />
 
@@ -382,10 +382,10 @@
 
     function animateValue(obj, start, end, duration) {
       return new Promise((resolve) => {
-        let startTimestamp = null;
+        let startstartTimestamp = null;
         const step = (timestamp) => {
-          if (!startTimestamp) startTimestamp = timestamp;
-          let progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          if (!startstartTimestamp) startstartTimestamp = timestamp;
+          let progress = Math.min((timestamp - startstartTimestamp) / duration, 1);
           obj.innerText = (progress * (end - start) + start).toFixed(2);
           if (progress < 1) {
             window.requestAnimationFrame(step);
