@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Net Set Go | Free Online Internet Speed Test & ISP Checker</title>
-  <meta name="description" content="Test your internet speed instantly with Net Set Go. Check download speed, upload speed, ping latency, IP address, and ISP performance on mobile and desktop." />
+  <meta name="description" content="Use Net Set Go to measure internet download speed, upload speed and latency, understand your results, and learn practical ways to troubleshoot a slow connection." />
   <meta name="keywords" content="net set go, internet speed test, test my internet speed, speedtest internet, check my ip address, what is my isp, broadband speed test" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://netsetgopro.vercel.app/" />
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://netsetgopro.vercel.app/" />
   <meta property="og:title" content="Net Set Go | Free Online Internet Speed Test" />
-  <meta property="og:description" content="Accurate internet speed test. Check download, upload, ping, IP, and ISP instantly." />
+  <meta property="og:description" content="Measure download speed, upload speed and latency, then learn how to interpret and improve your connection." />
 
   <!-- Vercel Analytics -->
   <script defer src="/_vercel/insights/script.js"></script>
@@ -193,7 +193,11 @@
     }
     .seo-content h2 { color: var(--accent); font-size: 1.1rem; margin-top: 0.8rem; margin-bottom: 0.3rem; }
     .seo-content h2:first-of-type { margin-top: 0; }
-    .seo-content p { font-size: 0.83rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+    .seo-content p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.7rem; }
+    .seo-content h3 { color: var(--text-main); font-size: 0.98rem; margin: 0.9rem 0 0.25rem; }
+    .site-footer { width: 100%; max-width: 650px; text-align: center; padding: 1.25rem 0.5rem 0.5rem; color: var(--text-muted); font-size: 0.82rem; line-height: 1.8; }
+    .site-footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem; margin-bottom: 0.5rem; }
+    .site-footer a, .seo-content a { color: var(--accent); }
   </style>
 </head>
 <body>
@@ -260,10 +264,40 @@
 
   <section class="seo-content">
     <h2>How Net Set Go Measures Internet Speed</h2>
-    <p>Net Set Go tests your broadband, Wi-Fi, or mobile network performance by simulating real-world data streams. It measures your latency (ping), download bandwidth, and upload capacity to determine your exact internet service provider (ISP) speed.</p>
-    <h2>What Is My IP Address & ISP?</h2>
-    <p>Our advanced diagnostics automatically detect your public IP address and network provider location to measure latency and transfer speed using Cloudflare's global edge network. Results can vary with Wi-Fi, device load, routing, and the test endpoint.</p>
+    <p>Net Set Go is a browser-based diagnostic tool for checking the performance of the connection your device is currently using. The test sends and receives data through Cloudflare's global edge network and calculates transfer rates from the amount of data moved and the elapsed time. Results are estimates of performance during this test, not a guarantee of the speed your internet provider advertises.</p>
+    <h3>Download speed</h3>
+    <p>Download speed estimates how quickly data reaches your device. It matters for loading websites, streaming video, downloading files, and receiving updates. The test transfers a sample payload and calculates megabits per second (Mbps). Very fast connections, browser limitations, or short tests can affect the result.</p>
+    <h3>Upload speed</h3>
+    <p>Upload speed estimates how quickly your device sends data to the test endpoint. It can affect video calls, sending large files, cloud backups, and live streaming. The measurement depends on your connection and the route between your device and the endpoint.</p>
+    <h3>Ping and jitter</h3>
+    <p>Ping is the time a request takes to reach the test service and return, measured in milliseconds (ms). Lower latency is generally better for responsive gaming and calls. Jitter describes variation in latency between samples. Net Set Go shows a simple estimate from a small sample; it does not measure packet loss.</p>
+    <h2>How to Get a More Reliable Result</h2>
+    <p>Pause large downloads, streaming, cloud backups, and other speed tests before starting. For the most consistent comparison, use the same device and network, close unnecessary browser tabs, and repeat the test a few times. If possible, compare Wi-Fi with a wired Ethernet connection. Wi-Fi distance, walls, interference, router capability, device performance, VPNs, and network congestion can all change results.</p>
+    <h2>How to Understand Your Results</h2>
+    <p>Mbps means megabits per second; it is not the same as megabytes per second (MB/s). Divide Mbps by eight for a rough MB/s conversion before accounting for overhead. A higher download number is not the only sign of a good connection: latency, stability, upload capacity, and the requirements of your activity matter too.</p>
+    <h2>What Is My IP Address and ISP?</h2>
+    <p>The optional advanced details panel requests network information from ipapi.co to display the public IP address and network/provider information returned by that service. This information may be incomplete or approximate. Your public IP can identify a network connection; it is not the same as a device's private local address.</p>
+    <h2>Limitations and Privacy</h2>
+    <p>Results are affected by your device, browser, local network, ISP routing, the test endpoint, and current congestion. Net Set Go does not promise a particular speed or diagnose your provider's network. The speed test sends sample data to Cloudflare's test endpoint, and the advanced details panel contacts ipapi.co. Read our <a href="/privacy.html">Privacy Policy</a> for information about third-party services and advertising technologies.</p>
+    <h2>Frequently Asked Questions</h2>
+    <h3>Why is my result lower than my internet plan?</h3>
+    <p>Your plan may describe a maximum or typical access speed, while this test measures performance at one moment from your device to an external endpoint. Wi-Fi conditions, congestion, background traffic, and device limits can reduce the measured result.</p>
+    <h3>Should I use Wi-Fi or Ethernet?</h3>
+    <p>Ethernet is usually more consistent for testing because it avoids wireless interference. Wi-Fi testing is still useful when you want to understand the performance you actually experience on your phone or laptop.</p>
+    <h3>Does Net Set Go store my test results?</h3>
+    <p>The current tool displays results in your browser and does not provide an account or a saved test-history feature. Third-party services contacted by the page may process technical request data under their own policies. See the Privacy Policy for details.</p>
   </section>
+  <footer class="site-footer">
+    <nav aria-label="Footer navigation">
+      <a href="/about.html">About</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Use</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <p>Net Set Go provides estimates for informational purposes. Results vary by device, network conditions, and test endpoint.</p>
+    <p>© <span id="year"></span> Net Set Go</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
   <script>
     let isTestRunning = false;
